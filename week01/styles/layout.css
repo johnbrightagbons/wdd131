@@ -21,14 +21,14 @@ header {
     background-color: #6200ea; /* Set background color for the header */
     color: white; /* Set text color to white */
     padding: 10px 20px; /* Add padding */
-    text-align: center; /* Center-align text */
+    text-align: left; /* Center-align text */
 }
 
 /* Style the navigation inside the header */
 header nav {
     display: flex; /* Use Flexbox for the navigation */
     justify-content: center; /* Center the navigation items */
-    gap: 20px; /* Add space between navigation items */
+    gap: 50px; /* Add space between navigation items */
     margin-top: 10px; /* Add margin at the top */
 }
 
@@ -50,16 +50,15 @@ main {
     grid-area: main; /* Assign the main grid area */
     display: grid; /* Use CSS Grid for the main content area */
     grid-template-columns: 3fr 1fr; /* Define two columns with a 3:1 ratio */
-    gap: 20px; /* Add space between columns */
-    padding: 20px; /* Add padding around the main area */
+    /*gap: 20px; /* Add space between columns */
+    /*padding: 20px; /* Add padding around the main area */
 }
 
 /* Style the main content section */
 .main-content, .aside-content {
     padding: 20px; /* Add padding inside sections */
-    border: 1px solid #ccc; /* Add border with light gray color */
     background: white; /* Set background color to white */
-    border-radius: 8px; /* Round the corners of the sections */
+     
 }
 
 /* Style the footer */
