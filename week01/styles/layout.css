@@ -1,0 +1,71 @@
+/* Apply font and reset margins, padding, and box-sizing for the whole document */
+body {
+    font-family: 'Roboto', sans-serif; /* Set the font for the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Set box-sizing to border-box for consistent sizing */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-areas: 
+        "header" /* Define the header area */
+        "main" /* Define the main content area */
+        "footer"; /* Define the footer area */
+    grid-template-rows: auto 1fr auto; /* Define rows for the grid */
+    height: 100vh; /* Set the height to fill the viewport */
+    background-color: #f4f4f9; /* Set background color */
+    color: #333; /* Set text color */
+}
+
+/* Style the header */
+header {
+    grid-area: header; /* Assign the header grid area */
+    background-color: #6200ea; /* Set background color for the header */
+    color: white; /* Set text color to white */
+    padding: 10px 20px; /* Add padding */
+    text-align: left; /* Center-align text */
+}
+
+/* Style the navigation inside the header */
+header nav {
+    display: flex; /* Use Flexbox for the navigation */
+    justify-content: center; /* Center the navigation items */
+    gap: 50px; /* Add space between navigation items */
+    margin-top: 10px; /* Add margin at the top */
+}
+
+/* Style the links inside the navigation */
+header nav a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add padding inside links */
+    border-radius: 5px; /* Round the corners of the links */
+}
+
+/* Change link background on hover */
+header nav a:hover {
+    background-color: #3700b3; /* Set background color on hover */
+}
+
+/* Style the main content area */
+main {
+    grid-area: main; /* Assign the main grid area */
+    display: grid; /* Use CSS Grid for the main content area */
+    grid-template-columns: 3fr 1fr; /* Define two columns with a 3:1 ratio */
+    /*gap: 20px; /* Add space between columns */
+    /*padding: 20px; /* Add padding around the main area */
+}
+
+/* Style the main content section */
+.main-content, .aside-content {
+    padding: 20px; /* Add padding inside sections */
+    background: white; /* Set background color to white */
+     
+}
+
+/* Style the footer */
+footer {
+    grid-area: footer; /* Assign the footer grid area */
+    background-color: #6200ea; /* Set background color for the footer */
+    color: white; /* Set text color to white */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center-align text */
+}
