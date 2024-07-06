@@ -1,0 +1,186 @@
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General section styling for header, main, and footer */
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #4267B2;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: var(--forelight, #fff);
+}
+
+/* Flexbox for navigation */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header heading styling */
+header nav h2 {
+    margin: 0;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+/* Navigation link styling */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+/* hamburger button*/
+span {
+    font-size: 1.2rem;
+}
+
+nav {
+    display: none;
+}
+
+.closeButton {
+    display: none;
+}
+
+.open {
+    background-color: #325d79;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.show {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9;
+}
+
+
+/* Navigation link hover effect */
+nav a:hover {
+    color: black;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4267B2;
+    color: whitesmoke;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Content section within the main */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Center the heading within the content section */
+.content h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Figure element styling */
+figure {
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Figure caption styling */
+figcaption {
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+/* Styling for footer content */
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+.burgerMenu {
+    cursor: pointer;
+}
+
+.closeButton {
+    display: none;
+}
+
+.closeButton.show {
+    display: block;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.temple-card {
+    border: 1px solid var(--border, #ccc);
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px var(--shadow, #999);
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
