@@ -1,0 +1,19 @@
+/* Media query for larger screens */
+@media screen and (min-width: 640px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .closeButton {
+        display: none;
+    }
+
+    main .container {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
