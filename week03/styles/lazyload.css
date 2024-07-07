@@ -1,0 +1,56 @@
+
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+   width: 100%;
+   background-color: #00b9;
+   animation: fade 15s; 
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+header, footer, main {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    text-emphasis: none;
+    background-color: #009b;
+}
+
+main {
+    color: blue;
+    background-color: rgb(236, 245, 242);
+    display: block;
+}
+
+footer {
+    background-color: #009b;
+    color: whitesmoke;
+}
