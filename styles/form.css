@@ -1,0 +1,110 @@
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+/* MAIN */
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/* FORM STYLING */
+.review-counter fieldset {
+    margin: 2rem 0;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.review-counter legend {
+    color: #445ba9;
+    padding: 0.5rem;
+}
+
+.review-counter label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+.review-counter div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+.star-rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the container */
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.star-rate label {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items at the top */
+}
+
+.star-rate span {
+    margin-bottom: 0.5rem; /* Add some space between the star and the radio input */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+
+
+.review-counter input[type="text"],
+.review-counter textarea,
+.review-counter input[type="date"],
+.review-counter select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #6999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.optional {
+    color: blue;
+}
+
+.review-counter input[type="radio"],
+.review-counter input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+.review-counter input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.review-counter input:required {
+    border-right: solid 8px red;
+}
+
+.review-counter input:required:valid {
+    border-right: solid 8px green;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}

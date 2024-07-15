@@ -6,34 +6,74 @@
     <meta name="description" content="Form">
     <meta name="author" content="John Bright Agbons">
     <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/place.css" media="print" onload="this.media='all'">
-    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css" media="print" onload="this.media='all'">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <header class="header-text">
-        <h1>Product Review Form</h1>
-    </header>
+    
 
     <main>
-        <div class="form-content">
-            <form id="product-review-form">
-
-                <label for="product-name">Product name
-                    <span class="required-indicator">⋆</span>
-                </label>
-
-                <select id="product-name" name="product-name" autocomplete="off" required>
-                    <option value="" disabled selected>Pick a Product</option>
-                </select>
+        <h1>Product Review Form</h1>
+        <form method="get" action="review.html" class="review-counter">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label for="products">Please Choose a Product  
+                    <select id="products" name="products" required>
+                        <option value="" disabled selected> Please Select </option>
+                    </select>
                 
-                <div>Rating
-                    <span class=""
+                    <label>Overall Rating</label>
+                    <div class="star-rate">
+                        <label>
+                            <input type="radio" name="rating" value="rate1" required>
+                            <span>★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="rate2" required>
+                            <span>★★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="rate3" required>
+                            <span>★★★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="rate4" required>
+                            <span>★★★★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="rate5" required>
+                            <span>★★★★★</span>
+                        </label>
+                    </div>
+                    
+                
+                <label>Installation Date <input type="date" name="installDate" required></label>
+
+                <div>Which features did you find useful in the product? <i>(Check all that apply)</i> 
+                    <label><input type="checkbox" name="durable" value="yes"> Durability</label>
+                    <label><input type="checkbox" name="use" value="yes"> Ease of Use</label>
+                    <label><input type="checkbox" name="perform" value="yes"> Performance</label>
+                    <label><input type="checkbox" name="design" value="yes"> Design</label>
                 </div>
+
                 
-            </form>
-        </div>
+                <label>Written Review <span class="optional" >(Optional)</span><input type="text" name="comments"></label>
+                
+
+                <label>User Name <span class="optional" >(Optional)</span><input type="text" name="username"></label>
+
+                <input type="submit" value="Submit Review">
+                
+            </fieldset>
+                
+                
+        </form>
+        
     </main>
     
-    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> John Bright Agbons, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
