@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Sokponba Stake Football Club</title>
+    <link rel="stylesheet" href="styles/sokponba.css">
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="players_profile.html">Players Profile</a>
+            <a href="fixtures_results.html">Fixture and Results</a>
+            <a href="register.html">Registration</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Player Registration Form</h1>
+        <form method="get" action="thanks.html" class="reg">
+            <fieldset>
+                <legend>Player Information</legend>
+                <label>First Name* <input type="text" name="fname"  required></label>
+                <label>Last Name* <input type="text" name="lname"  required></label>
+                <label>Gender*</label>
+                    <input type="radio" name="gender"  value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female</label>
+                <label>Player Phone Number <input type="tel" name="phone" placeholder="123"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Date of Birth* <input type="date" name="dob" required></label>
+                <label>Address<input type="text" name="p;ayerAddress"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Club Information</legend>
+                <label>Main Playing Position*</label>
+                    <input type="radio" name="main-position" value="goal" required> Goal Keeping</label>
+                    <input type="radio" name="main-position" value="defence" required> Defence</label>
+                    <input type="radio" name="main-position" value="midfield" required> Midfield</label>
+                    <input type="radio" name="main-position" value="attack" required> Attack</label>
+
+                <label>Alternate Playing Position:<i> Multiple Selection is allowed</i> <span class="optional" >(Optional)</span></label> 
+                    <input type="checkbox" name="alt-position" value="goal"> Goal Keeping</label>
+                    <input type="checkbox" name="main-position" value="defence"> Defence</label>
+                    <input type="checkbox" name="main-position" value="midfield"> Midfield</label>
+                    <input type="checkbox" name="main-position" value="attack"> Attack</label>
+
+                <label>Have you played for any club before?* </label>
+                    <input type="radio" name="club" value="play" required>Yes</label>
+                    <input type="radio" name="club" value="play" required>No</label>
+                    <label><i>If Yes, Please provide name</i><input type="text" name="club"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parental Information- <i>Only complete if player is under 18</i></legend>
+                <label>Parent's Full Name- <i>Surname first</i> <input type="text" name="pname"></label>
+                <label>Parent's Phone Number <input type="tel" name="phone" placeholder="123"></label>
+                <label>Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label>Address<i>(only fill if different from player's address)</i><input type="text" name="pAddress"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Signatures</legend>
+                <p>Player</p>
+                <p>I hereby agree to comply with the rules and regulations of Sokponba Stake FC and ensure I adhere
+                    strictly to the club’s standards</p>
+                
+                    <label>Signature:<i> Please provide your name</i><input type="text" name="player-rule" required></label>
+                    <label>Date <input type="date" name="rule-date" required></label>
+                
+                <p>Parent<i>( only required if player is under 18 years)</i></p>
+                <p>I hereby give permission for my child/ward to participate in Sokponba Stake FC team</p>
+                <label>Signature:<i> Please provide your name</i><input type="text" name="player-rule" required></label>
+                    <label>Date <input type="date" name="rule-date" required></label>
+            </fieldset>
+            <input type="submit" value="complete My Registration">
+
+        </form>
+    </main>
+    <footer>
+        &copy;<span id="currentyear"></span> 🌺 John Bright Agbons 🌺 Nigeria <br>
+        <small>Last Modification: <span id="lastModified"></span></small>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

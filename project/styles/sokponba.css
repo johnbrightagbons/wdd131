@@ -1,0 +1,164 @@
+/* General body styling */
+body {
+    background-color: #1c1fadc7; /* Set the background color */
+    color: black; /* Set the text color */
+    font-size: 22px; /* Set the base font size */
+    font-family: 'Georgia', Arial, Helvetica, sans-serif; /* Set the font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header styling */
+header {
+    background-color: #f3eff7; /* Set the background color for the header */
+    color: #1c1fadc7; /* Set the text color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between logo and nav */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding around the header */
+}
+
+/* Styling for the logo link */
+#logo_link {
+    display: flex; /* Use flexbox for the logo container */
+    align-items: center; /* Center the logo vertically */
+}
+
+/* Styling for the logo image */
+.logo {
+    width: 80px; /* Set the width of the logo */
+}
+
+/* Navigation styling */
+nav {
+    display: flex; /* Use flexbox for the navigation container */
+    gap: 15px; /* Add space between navigation links */
+    margin-left: auto; /* Push the navigation to the right */
+}
+
+/* Styling for navigation links */
+nav a {
+    color: #1c1fadc7; /* Set the text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding inside links */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text within the links */
+}
+
+/* Styling for navigation links on hover */
+nav a:hover {
+    background-color: rgb(227, 216, 231); /* Change background color on hover */
+    color: whitesmoke; /* Change text color on hover */
+}
+
+/* Styling for the main container */
+main.home-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 3fr 1fr ; /* Define three equal columns */
+    gap: 20px; /* Add space between grid items */
+    padding: 10px; /* Add padding around the main container */
+}
+
+/* Move the second and third sections to the first column */
+main.home-grid section:nth-child(2),
+main.home-grid section:nth-child(3) {
+    grid-column: 1; /* Place the sections in the first column */
+}
+
+
+/* General styling for sections inside the main container */
+main.home-grid section {
+    background-color: #f3eff7; /* Set background color for sections */
+    padding: 15px; /* Add padding inside sections */
+    border-radius: 8px; /* Round the corners of sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+/* Specific styling for images inside sections */
+main.home-grid section img {
+    width: 80%; /* Make images responsive */
+    border-radius: 8px; /* Round the corners of images */
+}
+
+/* Styling for section titles */
+main.home-grid section h2 {
+    font-size: 1.5em; /* Set font size for section titles */
+    margin-top: 15px; /* Add margin above titles */
+}
+
+/* Styling for section paragraphs */
+main.home-grid section p {
+    font-size: 1em; /* Set font size for section paragraphs */
+    line-height: 1.6; /* Set line height for readability */
+}
+
+/* Styling for the registration link in the message section */
+main.home-grid section.msg a.register {
+    display: inline-block; /* Make the link an inline block */
+    background-color: wheat; /* Set background color */
+    color: blue; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Set font size */
+    padding: 10px 20px; /* Add padding inside the link */
+    border-radius: 5px; /* Round the corners */
+    margin-top: 15px; /* Add margin at the top */
+}
+
+/* Styling for the registration link on hover */
+main.home-grid section.msg a.register:hover {
+    background-color: lightblue; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+/* Ensure that the .msg section spans both columns */
+main.home-grid section.msg {
+    grid-column: span 2; /* Span both columns */
+    text-align: center; /* Center the text */
+    background-color: aliceblue; /* Set background color */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    order: -1; /* Move the .msg section to the top */
+}
+
+/* Ensure that the .update sections are positioned in the right column */
+main.home-grid section.update {
+    grid-column: 2; /* Place the .update sections in the second column */
+    display: flex;
+    flex-direction: column;   
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center the text */
+}
+
+footer .social a {
+    margin: 0 10px; /* Add margin around social media links */
+}
+
+footer .social img {
+    width: 20px; /* Set the width of social media icons */
+    height: 20px; /* Set the height of social media icons */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .home-grid {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav a {
+        margin: 5px 0; /* Add margin around navigation links */
+    }
+}
