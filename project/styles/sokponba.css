@@ -18,6 +18,40 @@ header {
     padding: 10px 20px; /* Add padding around the header */
 }
 
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    display: none; /* Hide the hamburger menu on larger screens */
+    flex-direction: column; /* Stack the lines vertically */
+    justify-content: space-around; /* Distribute space evenly */
+    width: 30px; /* Set the width of the menu */
+    height: 30px; /* Set the height of the menu */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.hamburger-menu span {
+    width: 100%; /* Set the width to 100% of the parent */
+    height: 3px; /* Set the height of each line */
+    background-color: #000; /* Set the background color */
+}
+
+/* X styling */
+.hamburger-menu.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+    position: absolute;
+}
+
+.hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 10px;
+    position: absolute;
+}
+
+
 /* Styling for the logo link */
 #logo_link {
     display: flex; /* Use flexbox for the logo container */
@@ -34,6 +68,7 @@ nav {
     display: flex; /* Use flexbox for the navigation container */
     gap: 15px; /* Add space between navigation links */
     margin-left: auto; /* Push the navigation to the right */
+    padding: 1rem;
 }
 
 /* Styling for navigation links */
@@ -50,6 +85,7 @@ nav a:hover {
     background-color: rgb(227, 216, 231); /* Change background color on hover */
     color: whitesmoke; /* Change text color on hover */
 }
+
 
 /* Styling for the main container */
 main.home-grid {
@@ -149,16 +185,28 @@ footer .social img {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    .home-grid {
-        grid-template-columns: 1fr; /* Stack columns on small screens */
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Show the hamburger menu on smaller screens */
     }
 
     nav {
+        display: none; /* Hide the navigation menu initially */
         flex-direction: column; /* Stack navigation links vertically */
+        position: absolute; /* Position the nav menu absolutely */
+        top: 60px; /* Position below the header */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        background-color: #f3eff7; /* Background color for the nav menu */
+    }
+
+    nav.active {
+        display: flex; /* Show the navigation menu when active */
     }
 
     nav a {
-        margin: 5px 0; /* Add margin around navigation links */
+        padding: 15px; /* Increase padding for navigation links */
+        border-bottom: 1px solid #ddd; /* Add border between links */
     }
 }

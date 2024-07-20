@@ -9,17 +9,24 @@
 </head>
 <body>
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="players_profile.html">Players Profile</a>
-            <a href="fixtures_results.html">Fixture and Results</a>
-            <a href="register.html">Registration</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-    </header>
+                <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
+                </a>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="players_profile.html">Players Profile</a>
+                <a href="fixtures_results.html">Fixture and Results</a>
+                <a href="register.html">Registration</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        
     <main>
         <h1>Player Registration Form</h1>
         <form method="get" action="thanks.html" class="reg">
@@ -75,8 +82,8 @@
                 
                 <p>Parent<i>( only required if player is under 18 years)</i></p>
                 <p>I hereby give permission for my child/ward to participate in Sokponba Stake FC team</p>
-                <label>Signature:<i> Please provide your name</i><input type="text" name="player-rule" required></label>
-                    <label>Date <input type="date" name="rule-date" required></label>
+                <label>Signature:<i> Please provide your name</i><input type="text" name="player-rule"></label>
+                    <label>Date <input type="date" name="rule-date"></label>
             </fieldset>
             <input type="submit" value="complete My Registration">
 
@@ -97,6 +104,6 @@
             </a>
         </div>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/sokponba.js" defer></script>
 </body>
 </html>

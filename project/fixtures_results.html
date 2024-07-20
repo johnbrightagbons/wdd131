@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixtures and Results - Sokponba Stake Football Club</title>
     <link rel="stylesheet" href="styles/sokponba.css">
+    <link rel="stylesheet" href="styles/fixtures_and_results.css">
 </head>
 <body>
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="players_profile.html">Players Profile</a>
-            <a href="fixtures_results.html">Fixture and Results</a>
-            <a href="register.html">Registration</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Fixtures and Results</h1>
-        <section>
-            <h2>Upcoming Fixtures</h2>
-            <p>Details about upcoming fixtures.</p>
-        </section>
-        <section>
-            <h2>Past Results</h2>
-            <p>Details about past results.</p>
-        </section>
+                <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
+                </a>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="players_profile.html">Players Profile</a>
+                <a href="fixtures_results.html">Fixture and Results</a>
+                <a href="register.html">Registration</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        
+    <main id="main-content">
+        <!-- Content will be populated by JavaScript -->
     </main>
     <footer>
         &copy;<span id="currentyear"></span> 🌺 John Bright Agbons 🌺 Nigeria <br>
@@ -45,6 +45,7 @@
             </a>
         </div>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
+    
+    <script src="scripts/sokponba.js" defer></script>
 </body>
 </html>

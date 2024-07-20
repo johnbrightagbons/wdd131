@@ -17,51 +17,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Array of player objects with name, position, and age
-    const players = [
-        { name: "Osazee Destiny", position: "Goalkeeper" , age: 18 },
-        { name: "Sunday Omotosho", position: "Defender" , age: 18 },
-        { name: "Onaghama Stanley", position: "Defender", age: 18 },
-        { name: "Victor Pedro", position: "Defender", age: 25 },
-        { name: "Aimudo Bright", position: "Defender", age: 31 },
-        { name: "John Bright Agbons", position: "Midfielder", age: 25 },
-        { name: "Ifeanyi Wisdom", position: "Midfielder", age: 18 },
-        { name: "Samuel Edem", position: "Midfielder", age: 19 },
-        { name: "Shedrack Osahon", position: "Midfielder", age: 20 },
-        { name: "Eze Fidelis", position: "Forward", age: 18 },
-        { name: "Albert Samuel", position: "Forward", age: 18 },
-        { name: "Ekhator Destiny", position: "Forward", age: 22 },
-        { name: "Osagie Presley", position: "Forward", age: 19 },
-        { name: "Julius Divine", position: "Forward", age: 19 },
-        { name: "Daniel Osaro", position: "Forward", age: 18 }
+    const fixtures = [
+        { match: "Sokponba Stake vs Fire Blazers", date: "19-07-2024", time: "15:00" },
+        { match: "Horizon vs Sokponba Stake", date: "20-07-2024", time: "17:00" },
+        { match: "Sokponba Stake vs Desert Warriors", date: "22-07-2024", time: "19:00" },
+        { match: "White Angels vs Sokponba Stake", date: "23-07-2024", time: "21:00" }
     ];
 
-    // Get the container where the player profiles will be added
-    const playersContainer = document.getElementById('players');
+    const results = [
+        { match: "Sokponba Stake 2 vs 1 Umelu FC" },
+        { match: "Umelu FC 3 vs 3 Sokponba Stake" },
+        { match: "Batters 1 vs 0 Sokponba Stake" },
+        { match: "Sokponba Stake 5 vs 2 Eagles Wingers" }
+    ];
 
-    // Loop through each player and create the HTML structure
-    players.forEach(player => {
-        // Create a section for each player
-        const playerSection = document.createElement('section');
+    const mainContent = document.getElementById('main-content');
 
-        // Create and set the player's name
-        const playerName = document.createElement('h3');
-        playerName.textContent = player.name;
+    const resultsTitle = document.createElement('h2');
+    resultsTitle.textContent = "Results";
+    mainContent.appendChild(resultsTitle);
 
-        // Create and set the player's position
-        const playerPosition = document.createElement('p');
-        playerPosition.textContent = `Position: ${player.position}`;
+    results.forEach(result => {
+        const resultDiv = document.createElement('div');
+        resultDiv.textContent = result.match;
+        mainContent.appendChild(resultDiv);
+    });
 
-        // Create and set the player's age
-        const playerAge = document.createElement('p');
-        playerAge.textContent = `Age: ${player.age}`;
+    const fixturesTitle = document.createElement('h2');
+    fixturesTitle.textContent = "Fixtures";
+    mainContent.appendChild(fixturesTitle);
 
-        // Append the name, position, and age to the player section
-        playerSection.appendChild(playerName);
-        playerSection.appendChild(playerPosition);
-        playerSection.appendChild(playerAge);
+    fixtures.forEach(fixture => {
+        const fixtureDiv = document.createElement('div');
+        fixtureDiv.textContent = `${fixture.match} - Date: ${fixture.date} Time: ${fixture.time}`;
+        mainContent.appendChild(fixtureDiv);
+    });
+});
 
-        // Append the player section to the players container
-        playersContainer.appendChild(playerSection);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerMenu.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(contactForm);
+        const formObject = {};
+        formData.forEach((value, key) => formObject[key] = value);
+        localStorage.setItem('contactFormData', JSON.stringify(formObject));
+        alert('Contact data saved!');
     });
 });

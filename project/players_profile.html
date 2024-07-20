@@ -9,20 +9,145 @@
 </head>
 <body>
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="players_profile.html">Players Profile</a>
-            <a href="fixtures_results.html">Fixture and Results</a>
-            <a href="register.html">Registration</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-    </header>
+                <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
+                </a>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="players_profile.html">Players Profile</a>
+                <a href="fixtures_results.html">Fixture and Results</a>
+                <a href="register.html">Registration</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        
     <main>
-        <h1>Players Profile</h1>
-        <div id="players"></div> 
+    
+        <table class="table table-striped">
+            <caption>Players Profile</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Player's Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Matches Played</th>
+                    <th scope="col">Goals</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="highlight">Osazee Destiny</td>
+                    <td class="highlight">Goalkeeper</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">10</td>
+                    <td class="highlight">0</td>
+                </tr>
+                <tr>
+                    <td>Sunday Omotosho</td>
+                    <td>Defender</td>
+                    <td>18</td>
+                    <td>15</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Onaghama Stanley</td>
+                    <td class="highlight">Defender</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">12</td>
+                    <td class="highlight">1</td>
+                </tr>
+                <tr>
+                    <td>Victor Pedro</td>
+                    <td>Defender</td>
+                    <td>25</td>
+                    <td>18</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Aimudo Bright</td>
+                    <td class="highlight">Defender</td>
+                    <td class="highlight">31</td>
+                    <td class="highlight">20</td>
+                    <td class="highlight">4</td>
+                </tr>
+                <tr>
+                    <td>John Bright Agbons</td>
+                    <td>Midfielder</td>
+                    <td>25</td>
+                    <td>22</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Ifeanyi Wisdom</td>
+                    <td class="highlight">Midfielder</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">10</td>
+                    <td class="highlight">2</td>
+                </tr>
+                <tr>
+                    <td>Samuel Edem</td>
+                    <td>Midfielder</td>
+                    <td>19</td>
+                    <td>15</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Shedrack Osahon</td>
+                    <td class="highlight">Midfielder</td>
+                    <td class="highlight">20</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">5</td>
+                </tr>
+                <tr>
+                    <td>Eze Fidelis</td>
+                    <td>Forward</td>
+                    <td>18</td>
+                    <td>20</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Albert Samuel</td>
+                    <td class="highlight">Forward</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">8</td>
+                </tr>
+                <tr>
+                    <td>Ekhator Destiny</td>
+                    <td>Forward</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Osagie Presley</td>
+                    <td class="highlight">Forward</td>
+                    <td class="highlight">19</td>
+                    <td class="highlight">19</td>
+                    <td class="highlight">9</td>
+                </tr>
+                <tr>
+                    <td>Julius Divine</td>
+                    <td>Forward</td>
+                    <td>19</td>
+                    <td>16</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Daniel Osaro</td>
+                    <td class="highlight">Forward</td>
+                    <td class="highlight">18</td>
+                    <td class="highlight">14</td>
+                    <td class="highlight">5</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         &copy;<span id="currentyear"></span> 🌺 John Bright Agbons 🌺 Nigeria <br>
@@ -39,7 +164,6 @@
             </a>
         </div>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/sokponba.js" defer></script>
 </body>
 </html>

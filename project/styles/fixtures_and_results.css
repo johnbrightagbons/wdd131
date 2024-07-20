@@ -1,0 +1,10 @@
+#main-content {
+    font-style: Arial;
+    padding: .5rem;
+    border: solid 5px;
+    border-radius: 1.5rem;
+    margin-bottom: 9%;
+    text-align: center;
+    background-color: green;
+}
+

@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Sokponba Stake Football Club</title>
     <link rel="stylesheet" href="styles/sokponba.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="players_profile.html">Players Profile</a>
-            <a href="fixtures_results.html">Fixture and Results</a>
-            <a href="register.html">Registration</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
-    <main>
+                <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Sokponba Stake Football Club Logo">
+                </a>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="players_profile.html">Players Profile</a>
+                <a href="fixtures_results.html">Fixture and Results</a>
+                <a href="register.html">Registration</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
         <h1>Contact Us</h1>
-        <form>
+        <form method="get" action="thanks.html" class="contactus">
+            <fieldset>
+                <label>Full Name* <input type="text" name="name" placeholder="Name" required></label>
+                <label>Email* <input type="email" name="email"  placeholder="someone@gmail.com" required></label>
+                <label>Message*<input type="text" name="message" placeholder="Type your Message here" required></label>
+            </fieldset>
+            <input type="submit" value="Send">
             
         </form>
     </main>
@@ -40,19 +53,7 @@
             </a>
         </div>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const contactForm = document.getElementById('contactForm');
-            contactForm.addEventListener('submit', event => {
-                event.preventDefault();
-                const formData = new FormData(contactForm);
-                const formObject = {};
-                formData.forEach((value, key) => formObject[key] = value);
-                localStorage.setItem('contactFormData', JSON.stringify(formObject));
-                alert('Contact data saved!');
-            });
-        });
-    </script>
+    <script src="scripts/sokponba.js" defer></script>
+
 </body>
 </html>
