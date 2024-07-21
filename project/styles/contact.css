@@ -1,64 +1,44 @@
 body {
-    background-color: #f3f8f8;
-}
-main {
-    padding: 0 2%;
-    font: arial;
-    background-color: #f3f8f8;
-    color: green;
-    min-height: 20rem;
-    margin-bottom: 10rem;
-}
-
-h1 {
-    text-align: center;
-}
-
-.contactus fieldset {
-    border: 5px solid;
-    border-radius: 1%;
-    padding: .5rem 1%;
-}
-
-
-
-/* Form Styling */
-.reg fieldset {
-    margin: 2rem 0 ;
-    border: 1px solid;
-    border-radius: 8px ;
-    padding: .5rem 1% ;
-}
-
-
-.contactus label {
-    display: block;
-    padding-top: 1rem;
-    color: #26970f;
-    font-size: .9rem;
-}
-
-.contactus input[type="text"],
-.contactus input[type="email"] {
-    display: block;
-    border: solid 1px #6999;
-    border-radius: 6px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-}
-
-
-
-.contactus input[type="submit"] {
-    border: none;
-    font-size: larger;
-    color: #26970f;;
-    border-radius: 6px;
-    padding: .8rem;
-    width: 96%;
-    max-width: 400px;
-    margin: 1rem 2% 3rem 2%;
-}
+    background-color : #f3f8f8;
+    }
+    h1 {
+    text-align : center;
+    }
+    .contactus fieldset {
+    border : solid 5px;
+    border-radius : 1%;
+    padding : 0.5rem 1%;
+    }
+    .reg fieldset {
+    margin : 2rem 0;
+    border : solid 1px;
+    border-radius : 8px;
+    padding : 0.5rem 1%;
+    }
+    .contactus label {
+    display : block;
+    padding-top : 1rem;
+    color : #26970f;
+    font-size : 0.9rem;
+    }
+    .contactus input[type="text"], .contactus input[type="email"] {
+    display : block;
+    border : #6999 solid 1px;
+    border-radius : 6px;
+    padding : 0.75rem;
+    color : #555;
+    width : 100%;
+    max-width : 400px;
+    appearance : none;
+    }
+    .contactus input[type="submit"] {
+    border : none;
+    font-size : larger;
+    color : #26970f;
+    border-radius : 6px;
+    padding : 0.8rem;
+    width : 96%;
+    max-width : 400px;
+    margin : 1rem 2% 3rem 2%;
+    }
+    
