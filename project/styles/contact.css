@@ -3,11 +3,13 @@ body {
     }
     h1 {
     text-align : center;
+    color: #26970f;
     }
     .contactus fieldset {
     border : solid 5px;
     border-radius : 1%;
     padding : 0.5rem 1%;
+    color: #26970f;
     }
     .reg fieldset {
     margin : 2rem 0;
@@ -34,11 +36,14 @@ body {
     .contactus input[type="submit"] {
     border : none;
     font-size : larger;
-    color : #26970f;
+    color : whitesmoke;
     border-radius : 6px;
     padding : 0.8rem;
     width : 96%;
     max-width : 400px;
     margin : 1rem 2% 3rem 2%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.397));
     }
+
+
     
