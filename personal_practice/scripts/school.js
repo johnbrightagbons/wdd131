@@ -15,3 +15,14 @@ function calculateAttendance() {
 
     document.getElementById('result').textContent = `The Attendance Percentage for week ${week} is: ${attendancePercentage.toFixed(2)}%`;
 }
+
+function clearFields() {
+    document.getElementById('attendanceForm').reset();
+    document.getElementById('result').textContent = '';
+}
+
+function exitApplication() {
+    if (confirm("Are you sure you want to exit?")) {
+        window.close();
+    }
+}
