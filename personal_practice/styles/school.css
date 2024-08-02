@@ -1,3 +1,4 @@
+/* General styles for the body and main layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,64 +10,89 @@ body {
     background-color: #f7f7f7;
 }
 
+/* Styles for the header section */
 header {
-    background: #250441;
+    background: hsl(270, 50%, 40%);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
+/* Styles for the form fieldset */
+.atform fieldset {
+    margin: 2rem 0;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+
+/* Styles for the main content area */
 main {
     padding: 2rem;
     flex: 1;
 }
 
+/* Styles for the main heading */
 h1 {
     margin: 0;
 }
 
-h2 {
-    color: #333;
-}
-
+/* Styles for the form */
 form {
     margin-top: 1rem;
 }
 
-label {
-    display: block;
-    margin-top: 0.5rem;
-}
-
+/* Styles for input fields */
 input {
     width: 100%;
     padding: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.1px;
     box-sizing: border-box;
 }
 
+/* Styles for labels to align them to the left */
+.atform label {
+    display: block;
+    padding-top: 1rem;
+    color: hsl(270, 50%, 40%);
+    font-size: 0.9rem;
+}
+
+/* Styles for the fieldset legend */
+legend {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: x-large;
+    background-color: hsl(270, 50%, 40%);
+    color: #f7f7f7;
+}
+
+/* Styles for buttons */
 button {
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-    background-color: #250441;
+    background-color: hsl(270, 50%, 40%);
     color: white;
     border: none;
     cursor: pointer;
     width: 100%;
 }
 
+/* Hover effect for buttons */
 button:hover {
     background-color: #250441;
 }
 
+/* Styles for the result div */
 #result {
     margin-top: 1rem;
     font-weight: bold;
     color: green;
 }
 
+/* Styles for the footer section */
 footer {
-    background: #250441;
+    background: hsl(270, 50%, 40%);
     color: #fff;
     text-align: center;
     padding: 1rem 0;

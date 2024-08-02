@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Score Record</title>
+    <link rel="stylesheet" href="styles/scores.css">
+    <script src="scripts/scores.js" defer></script>
+</head>
+<body>
+    <!-- Header section with the title -->
+    <header>
+        <h1>Students Score Records</h1>
+    </header>
+    
+    <main>
+        <!-- Form for entering school information -->
+         <h2>Enter School Information</h2>
+        <form id="schoolInfoForm">
+            <label for="schoolName">School Name:</label>
+            <input type="text" id="schoolName" name="schoolName" required><br>
+            <label for="className">Class:</label>
+            <input type="text" id="className" name="className" required><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="session">Session:</label>
+            <input type="text" id="session" name="session" required><br>
+            <label for="teacherName">Subject Teacher:</label>
+            <input type="text" id="teacherName" name="teacherName" required><br>
+            <button type="button" onclick="saveSchoolInfo()">Save School Information</button>
+            <div id="schoolInfoMessage"></div>
+        </form>
+
+        <!-- Section for entering student scores -->
+        <h2>Enter Student Scores</h2>
+        <form id="studentInfoForm">
+            <label for="studentName">Student's Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <button type="button" onclick="addStudent()">Add Student</button>
+        </form>
+
+        <!-- Search bar to search for students -->
+        <input type="text" id="searchBar" placeholder="Search for students..." oninput="searchStudents()">
+
+        <!-- Table for displaying student scores -->
+        <form id="gradeForm">
+            <table id="gradeTable">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Student's Name</th>
+                        <th>1st Term Test 1</th>
+                        <th>1st Term Test 2</th>
+                        <th>1st Term Exam</th>
+                        <th>1st Term Total</th>
+                        <th>2nd Term Test 1</th>
+                        <th>2nd Term Test 2</th>
+                        <th>2nd Term Exam</th>
+                        <th>2nd Term Total</th>
+                        <th>3rd Term Test 1</th>
+                        <th>3rd Term Test 2</th>
+                        <th>3rd Term Exam</th>
+                        <th>3rd Term Total</th>
+                        <th>Position</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsList">
+                    <!-- Student rows will be dynamically added here -->
+                </tbody>
+            </table>
+            <button type="button" onclick="saveData()">Save Data</button>
+            <button type="button" onclick="clearFields()">Clear Fields</button>
+            <button type="button" onclick="downloadExcel()">Download as Excel</button>
+        </form>
+        <div id="result"></div>
+    </main>
+    
+    <!-- Including the XLSX library for exporting to Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    
+    <!-- Footer section with the current year and author information -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> John Bright Agbons. All rights reserved.</p>
+    </footer>
+</body>
+</html>

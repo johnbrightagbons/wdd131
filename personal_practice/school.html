@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance Calculator</title>
+    <!-- Link to the CSS file for styling -->
     <link rel="stylesheet" href="styles/school.css">
+    <!-- Link to the JavaScript file for functionality -->
     <script src="scripts/school.js" defer></script>
 </head>
 <body>
+    <!-- Header section with the title -->
     <header>
         <h1>Attendance Calculator</h1>
     </header>
     <main>
-        <h2>Calculate Attendance Percentage</h2>
-        <form id="attendanceForm">
-            <label for="week">Week:</label>
-            <input type="number" id="week" name="week" required><br>
-            <label for="morningAttendance">Morning Attendance:</label>
-            <input type="number" id="morningAttendance" name="morningAttendance" required><br>
-            <label for="afternoonAttendance">Afternoon Attendance:</label>
-            <input type="number" id="afternoonAttendance" name="afternoonAttendance" required><br>
-            <label for="numberStudents">Number of Students:</label>
-            <input type="number" id="numberStudents" name="numberStudents" required><br>
-            <label for="daysOpened">Days Opened:</label>
-            <input type="number" id="daysOpened" name="daysOpened" required><br>
-            <button type="button" onclick="calculateAttendance()">Calculate</button>
-            <button type="button" onclick="clearFields()">Clear</button>
-            <button type="button" onclick="exitApplication()">Exit</button>
+        <!-- Form for calculating attendance percentage -->
+        <form id="attendanceForm" class="atform">
+            <fieldset>
+                <legend>Calculate Attendance Percentage</legend>
+                <!-- Week input field -->
+                <label>Week <input type="number" id="week" name="week" required></label>
+                <!-- Morning Attendance input field -->
+                <label>Morning Attendance <input type="number" id="morningAttendance" name="morningAttendance" required></label>
+                <!-- Afternoon Attendance input field -->
+                <label>Afternoon Attendance <input type="number" id="afternoonAttendance" name="afternoonAttendance" required></label>
+                <!-- Number of Students input field -->
+                <label>Number of Students <input type="number" id="numberStudents" name="numberStudents" required></label>
+                <!-- Days Opened input field -->
+                <label>Days Opened <input type="number" id="daysOpened" name="daysOpened" required></label>
+                <!-- Buttons for calculating, clearing fields, and exiting -->
+                <button type="button" onclick="calculateAttendance()">Calculate</button>
+                <button type="button" onclick="clearFields()">Calculate Again</button>
+                <button type="button" onclick="exitApplication()">Exit</button>
+            </fieldset>
         </form>
+        <!-- Div to display the result of the calculation -->
         <div id="result"></div>
     </main>
+    <!-- Footer section with the current year and author information -->
     <footer>
         <p>&copy; <span id="currentYear"></span> John Bright Agbons. All rights reserved.</p>
     </footer>
